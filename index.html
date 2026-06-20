@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="alexsyubarjoltd — jasa pembuatan website profesional, pentesting, dan audit keamanan bisnis. Website cepat, kredibel, dan aman dari serangan siber." />
+  <title>alexsyubarjoltd — Website Profesional &amp; Audit Keamanan Bisnis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="pageLoader" class="page-loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <svg width="48" height="48" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#0f2340" />
+          <text x="16" y="22" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="20" fill="#fff">A</text>
+        </svg>
+      </div>
+      <span class="loader-brand">alexsyubarjoltd</span>
+      <div class="loader-spinner">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="16" stroke="rgba(255,255,255,0.15)" stroke-width="3" fill="none" />
+          <circle cx="20" cy="20" r="16" stroke="#06b6d4" stroke-width="3" fill="none" stroke-dasharray="80 21"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="loader-tagline">Mempersiapkan website Anda...</p>
+    </div>
+  </div>
+
+  <!-- 1. Announcement bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <p>Gratis konsultasi keamanan dan performa website untuk <strong>20 bisnis pertama</strong> bulan ini.</p>
+      <a href="#kontak" class="announcement-cta">Klaim Sekarang</a>
+    </div>
+  </div>
+
+  <!-- 2. Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="alexsyubarjoltd">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="currentColor" />
+            <text x="16" y="22" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="20"
+              fill="#fff">A</text>
+          </svg>
+        </span>
+        <span class="logo-text">alexsyubarjoltd</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <div class="nav-item has-mega">
+          <button class="nav-link nav-trigger" type="button" aria-expanded="false" aria-haspopup="true"
+            id="layananTrigger">
+            Layanan
+            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+          </button>
+          <div class="mega-menu" id="megaMenu" role="menu">
+            <div class="mega-grid">
+              <div class="mega-col">
+                <span class="mega-label">Pembuatan Website</span>
+                <a href="company-profile.html" role="menuitem">Website Company Profile</a>
+                <a href="ecommerce.html" role="menuitem">Website E-Commerce</a>
+                <a href="landing-page.html" role="menuitem">Landing Page Campaign</a>
+                <a href="web-app.html" role="menuitem">Web App Development</a>
+              </div>
+              <div class="mega-col">
+                <span class="mega-label">Keamanan Digital</span>
+                <a href="pentesting.html" role="menuitem">Security Pentesting</a>
+                <a href="vulnerability.html" role="menuitem">Vulnerability Assessment</a>
+                <a href="audit-infrastruktur.html" role="menuitem">Audit Infrastruktur Digital</a>
+                <a href="maintenance.html" role="menuitem">Maintenance &amp; Hardening</a>
+              </div>
+              <div class="mega-promo">
+                <p class="mega-promo-title">Butuh audit cepat?</p>
+                <p>Dapatkan penilaian risiko awal gratis untuk website bisnis Anda.</p>
+                <a href="#kontak" class="btn btn-accent btn-sm">Audit Gratis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#solusi" class="nav-link">Solusi</a>
+        <a href="#harga" class="nav-link">Harga</a>
+        <a href="#faq" class="nav-link">Resources</a>
+        <a href="#proses" class="nav-link">Proses Kerja</a>
+        <a href="#studi-kasus" class="nav-link">Studi Kasus</a>
+        <a href="#kontak" class="nav-link">Tentang Kami</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#audit" class="btn btn-ghost btn-sm hide-mobile">Audit Gratis</a>
+        <a href="#kontak" class="btn btn-primary btn-sm">Konsultasi Sekarang</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Hero -->
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Bangun Website yang Cepat, Profesional, dan Aman dari Serangan Siber</h1>
+          <p class="hero-sub">Kami membantu bisnis membuat website berkualitas tinggi sekaligus memastikan sistem
+            digital Anda aman melalui pentesting, audit keamanan, dan optimasi performa.</p>
+          <div class="hero-actions">
+            <a href="#kontak" class="btn btn-primary">Konsultasi Gratis</a>
+            <a href="#harga" class="btn btn-outline">Lihat Paket Layanan</a>
+          </div>
+          <div class="trust-badges">
+            <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M8 1L2 4v4c0 3.5 2.5 6.5 6 7 3.5-.5 6-3.5 6-7V4L8 1z" stroke="currentColor" fill="none"
+                  stroke-width="1.2" />
+              </svg> Secure Development</span>
+            <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" fill="none" stroke-width="1.2" />
+                <path d="M5 8l2 2 4-4" stroke="currentColor" fill="none" stroke-width="1.2" />
+              </svg> OWASP-Based Audit</span>
+            <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M2 12l4-4 3 3 5-6" stroke="currentColor" fill="none" stroke-width="1.2" />
+              </svg> Performance Optimized</span>
+            <span class="badge"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" fill="none" stroke-width="1.2" />
+              </svg> Business-Ready Website</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="dashboard-mockup">
+            <div class="mockup-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="mockup-title">Digital Health Dashboard</span>
+            </div>
+            <div class="mockup-body">
+              <div class="score-row">
+                <div class="score-card">
+                  <span class="score-label">Website Health</span>
+                  <span class="score-value good">92</span>
+                  <div class="score-bar"><span style="width:92%"></span></div>
+                </div>
+                <div class="score-card">
+                  <span class="score-label">Performance</span>
+                  <span class="score-value good">88</span>
+                  <div class="score-bar"><span style="width:88%"></span></div>
+                </div>
+              </div>
+              <div class="risk-panel">
+                <div class="risk-header">
+                  <span>Security Risk Level</span>
+                  <span class="risk-tag medium">Medium</span>
+                </div>
+                <div class="risk-items">
+                  <div class="risk-item"><span class="risk-dot critical"></span> SQL Injection — Critical</div>
+                  <div class="risk-item"><span class="risk-dot high"></span> XSS Reflected — High</div>
+                  <div class="risk-item"><span class="risk-dot low"></span> Missing Headers — Low</div>
+                </div>
+              </div>
+              <div class="mockup-bottom">
+                <div class="conversion-mini">
+                  <span>Conversion Tracking</span>
+                  <strong>+34%</strong>
+                  <svg viewBox="0 0 80 30" class="sparkline">
+                    <polyline points="0,25 15,20 30,22 45,12 60,14 80,5" fill="none" stroke="currentColor"
+                      stroke-width="2" />
+                  </svg>
+                </div>
+                <div class="checklist-mini">
+                  <span>Audit Checklist</span>
+                  <ul>
+                    <li class="done">SSL/TLS Configuration</li>
+                    <li class="done">Access Control Review</li>
+                    <li>Penetration Test</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Social proof -->
+    <section class="social-proof">
+      <div class="container">
+        <p class="social-proof-title">Dipercaya untuk membantu bisnis tampil profesional dan lebih aman secara digital
+        </p>
+        <div class="logo-strip">
+          <div class="logo-placeholder"><span>Startup</span></div>
+          <div class="logo-placeholder"><span>UMKM</span></div>
+          <div class="logo-placeholder"><span>E-Commerce</span></div>
+          <div class="logo-placeholder"><span>Konsultan</span></div>
+          <div class="logo-placeholder"><span>Klinik</span></div>
+          <div class="logo-placeholder"><span>Edukasi</span></div>
+          <div class="logo-placeholder"><span>Corporate</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Problem -->
+    <section class="section section-alt" id="masalah">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Website yang bagus saja tidak cukup. Bisnis Anda juga harus aman.</h2>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <div class="problem-icon slow">
+              <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+                <circle cx="14" cy="14" r="10" stroke="currentColor" fill="none" stroke-width="2" />
+                <path d="M14 8v6l4 2" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Kecepatan menentukan kepercayaan</h3>
+            <p>Website lambat menurunkan kepercayaan calon pelanggan. Pengunjung meninggalkan halaman sebelum sempat
+              membaca penawaran Anda.</p>
+          </article>
+          <article class="problem-card">
+            <div class="problem-icon design">
+              <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+                <rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor" fill="none" stroke-width="2" />
+                <path d="M4 10h20" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Desain membangun kredibilitas</h3>
+            <p>Desain kurang profesional membuat bisnis terlihat tidak kredibel. Tampilan yang rapi dan modern langsung
+              meningkatkan persepsi kualitas.</p>
+          </article>
+          <article class="problem-card">
+            <div class="problem-icon security">
+              <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+                <path d="M14 3L5 7v6c0 5.5 4 10 9 11 5-1 9-5.5 9-11V7l-9-4z" stroke="currentColor" fill="none"
+                  stroke-width="2" />
+                <path d="M10 14l3 3 5-6" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Celah keamanan = risiko bisnis</h3>
+            <p>Celah keamanan bisa menyebabkan kebocoran data, deface, malware, dan kerugian reputasi yang sulit
+              dipulihkan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Solution / Platform -->
+    <section class="section" id="solusi">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow">Platform Layanan</span>
+          <h2>Satu partner untuk website, performa, dan keamanan digital bisnis Anda</h2>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar-card">
+            <div class="pillar-icon build">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M4 24l12-16 12 16H4z" stroke="currentColor" fill="none" stroke-width="2"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Build</h3>
+            <p>Desain UI/UX, development, CMS, e-commerce, dan landing page yang siap mendukung pertumbuhan bisnis Anda.
+            </p>
+            <ul>
+              <li>Desain responsif &amp; brand-aligned</li>
+              <li>CMS mudah dikelola tim</li>
+              <li>Integrasi payment &amp; CRM</li>
+            </ul>
+          </article>
+          <article class="pillar-card featured">
+            <div class="pillar-icon optimize">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M4 24V12l12-8 12 8v12" stroke="currentColor" fill="none" stroke-width="2" />
+                <path d="M12 24v-8h8v8" stroke="currentColor" fill="none" stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Optimize</h3>
+            <p>SEO dasar, kecepatan loading, mobile responsive, analytics, dan optimasi conversion agar website
+              benar-benar menghasilkan lead.</p>
+            <ul>
+              <li>Core Web Vitals optimization</li>
+              <li>Tracking &amp; conversion funnel</li>
+              <li>SEO on-page fundamental</li>
+            </ul>
+          </article>
+          <article class="pillar-card">
+            <div class="pillar-icon secure">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16 4L6 9v8c0 6 4.5 11.5 10 13 5.5-1.5 10-7 10-13V9l-10-5z" stroke="currentColor" fill="none"
+                  stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Secure</h3>
+            <p>Pentesting, vulnerability scan, hardening, security report, dan rekomendasi perbaikan yang mudah dipahami
+              pemilik bisnis.</p>
+            <ul>
+              <li>OWASP-based methodology</li>
+              <li>Executive summary non-teknis</li>
+              <li>Retest setelah perbaikan</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Service cards -->
+    <section class="section section-alt" id="layanan">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow">Layanan Kami</span>
+          <h2>Solusi lengkap dari website hingga audit keamanan</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" fill="none" stroke-width="1.5" />
+                <path d="M3 8h18" stroke="currentColor" stroke-width="1.5" />
+              </svg></div>
+            <h3>Pembuatan Website Bisnis</h3>
+            <p>Company profile profesional yang memperkuat kredibilitas dan memudahkan calon klien menghubungi Anda.</p>
+            <a href="company-profile.html" class="service-link">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6h14l-1 12H7L6 6z" stroke="currentColor" fill="none" stroke-width="1.5" />
+                <circle cx="9" cy="20" r="1" fill="currentColor" />
+                <circle cx="17" cy="20" r="1" fill="currentColor" />
+              </svg></div>
+            <h3>Website Toko Online</h3>
+            <p>E-commerce dengan katalog produk, keranjang, payment gateway, dan pengalaman belanja yang
+              mobile-friendly.</p>
+            <a href="ecommerce.html" class="service-link">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 18V6l8 4 8-4v12l-8 4-8-4z" stroke="currentColor" fill="none" stroke-width="1.5" />
+              </svg></div>
+            <h3>Landing Page Penjualan</h3>
+            <p>Halaman campaign fokus konversi untuk promo, lead generation, dan peluncuran produk baru.</p>
+            <a href="landing-page.html" class="service-link">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" fill="none" stroke-width="1.5" />
+                <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" />
+              </svg></div>
+            <h3>Custom Web Application</h3>
+            <p>Aplikasi web kustom untuk workflow internal, portal klien, dashboard, dan sistem operasional bisnis.</p>
+            <a href="web-app.html" class="service-link">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon accent"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3L4 7v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V7l-8-4z" stroke="currentColor" fill="none"
+                  stroke-width="1.5" />
+              </svg></div>
+            <h3>Security Pentesting</h3>
+            <p>Simulasi serangan nyata untuk menemukan celah sebelum dieksploitasi pihak berbahaya.</p>
+            <a href="pentesting.html" class="service-link">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon accent"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" fill="none" stroke-width="1.5" />
+                <path d="M16 16l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg></div>
+            <h3>Vulnerability Assessment</h3>
+            <p>Pemindaian sistematis untuk mengidentifikasi kerentanan teknis di website, server, dan infrastruktur.</p>
+            <a href="vulnerability.html" class="service-link">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M4 12h10M4 18h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg></div>
+            <h3>Website Maintenance</h3>
+            <p>Pemeliharaan rutin, update konten, backup, monitoring uptime, dan perbaikan bug pasca-launch.</p>
+            <a href="maintenance.html" class="service-link">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon accent"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" fill="none" stroke-width="1.5" />
+                <path d="M9 10h6M9 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg></div>
+            <h3>Security Hardening</h3>
+            <p>Konfigurasi ulang server, firewall, SSL, dan kebijakan akses untuk memperkuat pertahanan sistem.</p>
+            <a href="audit-infrastruktur.html" class="service-link">Pelajari layanan →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Process -->
+    <section class="section" id="proses">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow">Cara Kerja</span>
+          <h2>Proses kerja yang transparan dari strategi sampai website live</h2>
+        </div>
+        <div class="process-track">
+          <article class="process-step">
+            <span class="step-num">01</span>
+            <h3>Discovery bisnis dan kebutuhan teknis</h3>
+            <p>Memahami target audiens, tujuan bisnis, fitur yang dibutuhkan, dan risiko keamanan yang relevan.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-num">02</span>
+            <h3>Wireframe dan desain UI</h3>
+            <p>Menyusun struktur halaman dan visual design yang selaras dengan identitas brand Anda.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-num">03</span>
+            <h3>Development dan integrasi</h3>
+            <p>Pengembangan website dengan kode bersih, integrasi CMS, payment, analytics, dan sistem pendukung.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-num">04</span>
+            <h3>Testing performa dan keamanan</h3>
+            <p>Uji kecepatan, responsivitas, dan audit keamanan sebelum website diterbitkan ke publik.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-num">05</span>
+            <h3>Launch, monitoring, dan maintenance</h3>
+            <p>Go-live dengan monitoring aktif, laporan performa, dan dukungan berkelanjutan sesuai kebutuhan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Security audit -->
+    <section class="section section-dark" id="audit">
+      <div class="container audit-grid">
+        <div class="audit-copy">
+          <span class="eyebrow light">Security Report</span>
+          <h2>Audit keamanan yang mudah dipahami oleh pemilik bisnis</h2>
+          <p>Laporan kami dirancang agar Anda bisa mengambil keputusan bisnis tanpa harus memahami jargon teknis yang
+            rumit.</p>
+          <ul class="audit-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10l4 4 8-8" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Executive summary non-teknis
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10l4 4 8-8" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Risk rating: Critical, High, Medium, Low
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10l4 4 8-8" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Bukti temuan vulnerability
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10l4 4 8-8" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Dampak bisnis setiap temuan
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10l4 4 8-8" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Rekomendasi perbaikan prioritas
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10l4 4 8-8" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Retest setelah perbaikan
+            </li>
+          </ul>
+          <a href="#kontak" class="btn btn-accent">Minta Sample Report</a>
+        </div>
+        <div class="audit-report" aria-hidden="true">
+          <div class="report-card">
+            <div class="report-header">
+              <span>Security Audit Report</span>
+              <span class="report-date">Jun 2026</span>
+            </div>
+            <div class="report-summary">
+              <h4>Executive Summary</h4>
+              <p>Ditemukan <strong>3 celah kritis</strong> yang berpotensi mengakibatkan kebocoran data pelanggan.
+                Perbaikan direkomendasikan dalam 7 hari.</p>
+            </div>
+            <div class="report-ratings">
+              <div class="rating-row critical"><span>Critical</span>
+                <div class="rating-bar"><span style="width:15%"></span></div><span>2</span>
+              </div>
+              <div class="rating-row high"><span>High</span>
+                <div class="rating-bar"><span style="width:35%"></span></div><span>5</span>
+              </div>
+              <div class="rating-row medium"><span>Medium</span>
+                <div class="rating-bar"><span style="width:55%"></span></div><span>8</span>
+              </div>
+              <div class="rating-row low"><span>Low</span>
+                <div class="rating-bar"><span style="width:25%"></span></div><span>3</span>
+              </div>
+            </div>
+            <div class="report-finding">
+              <span class="finding-tag critical">Critical</span>
+              <p>SQL Injection pada form login admin — memungkinkan akses tidak sah ke database.</p>
+            </div>
+            <div class="report-impact">
+              <strong>Dampak Bisnis:</strong> Kebocoran data pelanggan, denda regulasi, dan kerusakan reputasi brand.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Pricing -->
+    <section class="section section-alt" id="harga">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow">Paket Harga</span>
+          <h2>Pilih paket sesuai tahap pertumbuhan bisnis Anda</h2>
+          <p class="section-desc">Harga disesuaikan dengan kompleksitas proyek. Konsultasi awal selalu gratis.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3>Starter Website</h3>
+            <p class="pricing-desc">Untuk UMKM yang butuh company profile cepat dan profesional.</p>
+            <ul class="pricing-features">
+              <li>5–8 halaman responsif</li>
+              <li>Desain custom brand-aligned</li>
+              <li>CMS mudah dikelola</li>
+              <li>Form kontak &amp; WhatsApp</li>
+              <li>SSL &amp; hosting setup</li>
+            </ul>
+            <a href="#kontak" class="btn btn-outline btn-block">Diskusikan Paket</a>
+          </article>
+          <article class="pricing-card popular">
+            <span class="popular-badge">Paling Populer</span>
+            <h3>Growth Website</h3>
+            <p class="pricing-desc">Untuk bisnis yang butuh website lebih lengkap, SEO dasar, analytics, dan optimasi.
+            </p>
+            <ul class="pricing-features">
+              <li>Semua fitur Starter</li>
+              <li>SEO on-page fundamental</li>
+              <li>Google Analytics &amp; Search Console</li>
+              <li>Optimasi kecepatan loading</li>
+              <li>Blog &amp; landing page tambahan</li>
+              <li>3 bulan maintenance</li>
+            </ul>
+            <a href="#kontak" class="btn btn-primary btn-block">Diskusikan Paket</a>
+          </article>
+          <article class="pricing-card">
+            <h3>Secure Business</h3>
+            <p class="pricing-desc">Untuk bisnis yang butuh website plus pentesting, hardening, dan laporan audit
+              keamanan.</p>
+            <ul class="pricing-features">
+              <li>Semua fitur Growth</li>
+              <li>Security pentesting lengkap</li>
+              <li>Vulnerability assessment</li>
+              <li>Security hardening server</li>
+              <li>Laporan audit executive-ready</li>
+              <li>Retest setelah perbaikan</li>
+            </ul>
+            <a href="#kontak" class="btn btn-outline btn-block">Diskusikan Paket</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Case studies -->
+    <section class="section" id="studi-kasus">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow">Studi Kasus</span>
+          <h2>Hasil nyata untuk bisnis yang ingin tumbuh dengan aman</h2>
+        </div>
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-metric">3×</div>
+            <span class="case-label">Peningkatan Inquiry</span>
+            <h3>Website company profile meningkatkan inquiry 3x</h3>
+            <p>Konsultan bisnis B2B mendapatkan tampilan profesional dan form lead terstruktur. Inquiry bulanan naik 3
+              kali lipat dalam 60 hari pasca-launch.</p>
+            <span class="case-tag">Company Profile</span>
+          </article>
+          <article class="case-card">
+            <div class="case-metric">-42%</div>
+            <span class="case-label">Cost per Lead</span>
+            <h3>Landing page campaign menurunkan cost per lead</h3>
+            <p>Brand e-commerce lokal meluncurkan landing page campaign dengan A/B testing CTA. Cost per lead turun 42%
+              dibanding halaman lama.</p>
+            <span class="case-tag">Landing Page</span>
+          </article>
+          <article class="case-card">
+            <div class="case-metric">5</div>
+            <span class="case-label">Celah Kritikal Dicegah</span>
+            <h3>Audit keamanan menemukan celah kritikal sebelum dieksploitasi</h3>
+            <p>Platform edtech menjalankan audit sebelum musim pendaftaran. Ditemukan 5 celah kritikal yang segera
+              diperbaiki sebelum data siswa terpapar risiko.</p>
+            <span class="case-tag">Security Audit</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <span class="eyebrow">FAQ</span>
+          <h2>Pertanyaan yang sering diajukan</h2>
+        </div>
+        <div class="faq-list" id="faqList">
+          <details class="faq-item" open>
+            <summary>Berapa lama pembuatan website?</summary>
+            <p>Company profile sederhana biasanya 2–4 minggu. Website e-commerce atau web app custom membutuhkan 6–12
+              minggu, tergantung kompleksitas fitur dan revisi desain.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Apakah website saya bisa dikelola sendiri?</summary>
+            <p>Ya. Kami menggunakan CMS yang mudah dipelajari tim Anda. Kami juga menyediakan panduan singkat dan sesi
+              handover agar Anda bisa update konten secara mandiri.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Apa bedanya vulnerability scan dan pentesting?</summary>
+            <p>Vulnerability scan menggunakan tools otomatis untuk mendeteksi kerentanan umum secara cepat. Pentesting
+              melibatkan simulasi serangan manual oleh ahli keamanan untuk menemukan celah yang tidak terdeteksi scan
+              otomatis.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Apakah hasil audit bisa digunakan untuk compliance?</summary>
+            <p>Laporan audit kami dapat menjadi dokumentasi pendukung untuk kebutuhan compliance internal, due diligence
+              investor, atau persiapan sertifikasi keamanan. Format disesuaikan dengan standar OWASP.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Apakah tersedia maintenance bulanan?</summary>
+            <p>Ya. Kami menawarkan paket maintenance bulanan yang mencakup update keamanan, backup, monitoring uptime,
+              dan dukungan teknis sesuai SLA yang disepakati.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Apakah bisa membantu memperbaiki vulnerability?</summary>
+            <p>Tentu. Tim development kami dapat menerapkan rekomendasi perbaikan dari laporan audit, lalu melakukan
+              retest untuk memastikan celah sudah tertutup dengan benar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Final CTA -->
+    <section class="section cta-section" id="kontak">
+      <div class="container cta-inner">
+        <div class="cta-copy">
+          <h2>Siap punya website yang terlihat profesional dan lebih aman?</h2>
+          <p>Mulai dari konsultasi gratis. Kami akan bantu cek kebutuhan website, performa, dan risiko keamanan bisnis
+            Anda.</p>
+          <div class="cta-actions">
+            <a href="mailto:hello@nexusforge.id" class="btn btn-primary btn-lg">Jadwalkan Konsultasi</a>
+            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20website%20dan%20audit%20keamanan"
+              class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">WhatsApp Sekarang</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Form Konsultasi Cepat</h3>
+          <div class="form-row">
+            <label>
+              <span>Nama Lengkap</span>
+              <input type="text" name="name" required placeholder="Nama Anda" />
+            </label>
+            <label>
+              <span>Email Bisnis</span>
+              <input type="email" name="email" required placeholder="nama@perusahaan.com" />
+            </label>
+          </div>
+          <label>
+            <span>Jenis Bisnis</span>
+            <select name="business" required>
+              <option value="">Pilih jenis bisnis</option>
+              <option>UMKM / Startup</option>
+              <option>E-Commerce</option>
+              <option>Korporat / Enterprise</option>
+              <option>Klinik / Kesehatan</option>
+              <option>Sekolah / Kampus</option>
+              <option>Organisasi / Lainnya</option>
+            </select>
+          </label>
+          <label>
+            <span>Kebutuhan Utama</span>
+            <select name="need" required>
+              <option value="">Pilih kebutuhan</option>
+              <option>Pembuatan Website Baru</option>
+              <option>Redesign Website</option>
+              <option>Security Audit / Pentesting</option>
+              <option>Website + Audit Keamanan</option>
+              <option>Maintenance &amp; Support</option>
+            </select>
+          </label>
+          <label>
+            <span>Pesan (opsional)</span>
+            <textarea name="message" rows="3" placeholder="Ceritakan singkat kebutuhan bisnis Anda..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Kirim Permintaan Konsultasi</button>
+          <p class="form-note">Kami akan merespons dalam 1×24 jam kerja.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 14. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="currentColor" />
+              <path d="M8 22V10l8 6 8-6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="logo-text">alexsyubarjoltd</span>
+        </a>
+        <p>Partner tepercaya untuk pembuatan website profesional dan audit keamanan digital bisnis di Indonesia.</p>
+        <div class="footer-social">
+          <a href="mailto:hello@nexusforge.id" aria-label="Email">Email</a>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="company-profile.html">Website Company Profile</a></li>
+          <li><a href="ecommerce.html">Website E-Commerce</a></li>
+          <li><a href="landing-page.html">Landing Page Campaign</a></li>
+          <li><a href="pentesting.html">Security Pentesting</a></li>
+          <li><a href="vulnerability.html">Vulnerability Assessment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Solusi Bisnis</h4>
+        <ul>
+          <li><a href="#solusi">UMKM &amp; Startup</a></li>
+          <li><a href="#solusi">E-Commerce</a></li>
+          <li><a href="#solusi">Klinik &amp; Kesehatan</a></li>
+          <li><a href="#solusi">Edukasi</a></li>
+          <li><a href="#solusi">Korporat</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#proses">Proses Kerja</a></li>
+          <li><a href="#studi-kasus">Studi Kasus</a></li>
+          <li><a href="#audit">Sample Report</a></li>
+          <li><a href="#harga">Paket Harga</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="#kontak">Tentang Kami</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Security Statement</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <address>Sleman,Yogyakarta — alexsyubarjocompany.ltd@gmail.com </address>
+      <p>&copy; <span id="year"></span> alexsyubarjoltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
