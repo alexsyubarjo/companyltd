@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alexsyubarjocompanyltd.web.id/sitemap.xml
