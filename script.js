@@ -131,7 +131,7 @@
       }
 
       const waText = encodeURIComponent(
-        `Halo NexusForge Digital,\n\n` +
+        `Hello alexsyubarjoltd,\n\n` +
           `Nama: ${name}\n` +
           `Email: ${email}\n` +
           `Jenis Bisnis: ${business}\n` +
@@ -140,7 +140,7 @@
           `\nSaya ingin konsultasi website dan audit keamanan.`
       );
 
-      window.open(`https://wa.me/6281234567890?text=${waText}`, "_blank", "noopener");
+      window.open(`https://wa.me/6287805718296?text=${waText}`, "_blank", "noopener");
 
       contactForm.innerHTML =
         `<div class="form-success show">` +
@@ -177,4 +177,249 @@
       if (megaParent) megaParent.classList.remove("open");
     }
   });
+
+  /* ══════════════════════════════════════════════════════════
+     ANIMATIONS — Scroll Reveal, Counters, Marquee, Tilt
+     ══════════════════════════════════════════════════════════ */
+
+  /* ── 1. Add reveal classes to elements ─────────── */
+  function setupRevealClasses() {
+    // Section headers
+    document.querySelectorAll(".section-header").forEach((el) => {
+      el.classList.add("reveal");
+    });
+
+    // Hero elements
+    const heroCopy = document.querySelector(".hero-copy");
+    const heroVisual = document.querySelector(".hero-visual");
+    if (heroCopy) heroCopy.classList.add("reveal", "reveal-left");
+    if (heroVisual) heroVisual.classList.add("reveal", "reveal-right");
+
+    // Grids with staggered children
+    const staggerGrids = [
+      { selector: ".problem-grid", childSelector: ".problem-card" },
+      { selector: ".pillar-grid", childSelector: ".pillar-card" },
+      { selector: ".service-grid", childSelector: ".service-card" },
+      { selector: ".pricing-grid", childSelector: ".pricing-card" },
+      { selector: ".case-grid", childSelector: ".case-card" },
+      { selector: ".process-track", childSelector: ".process-step" },
+    ];
+
+    staggerGrids.forEach(({ selector, childSelector }) => {
+      const grid = document.querySelector(selector);
+      if (grid) {
+        grid.classList.add("reveal-stagger");
+        grid.querySelectorAll(childSelector).forEach((child) => {
+          child.classList.add("reveal");
+        });
+      }
+    });
+
+    // Audit section
+    const auditCopy = document.querySelector(".audit-copy");
+    const auditReport = document.querySelector(".audit-report");
+    if (auditCopy) auditCopy.classList.add("reveal", "reveal-left");
+    if (auditReport) auditReport.classList.add("reveal", "reveal-right");
+
+    // CTA section
+    const ctaCopy = document.querySelector(".cta-copy");
+    const ctaForm = document.querySelector(".contact-form");
+    if (ctaCopy) ctaCopy.classList.add("reveal", "reveal-left");
+    if (ctaForm) ctaForm.classList.add("reveal", "reveal-right");
+
+    // FAQ items
+    document.querySelectorAll(".faq-item").forEach((item) => {
+      item.classList.add("reveal");
+    });
+
+    // Social proof
+    const socialProof = document.querySelector(".social-proof");
+    if (socialProof) socialProof.classList.add("reveal");
+
+    // Trust badges
+    const trustBadges = document.querySelector(".trust-badges");
+    if (trustBadges) {
+      trustBadges.querySelectorAll(".badge").forEach((badge) => {
+        badge.classList.add("reveal");
+      });
+      trustBadges.classList.add("reveal-stagger");
+    }
+  }
+
+  /* ── 2. IntersectionObserver for scroll reveal ─── */
+  function initScrollReveal() {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion) {
+      // Immediately show everything
+      document.querySelectorAll(".reveal").forEach((el) => {
+        el.classList.add("visible");
+      });
+      return;
+    }
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px 0px -60px 0px",
+      threshold: 0.1,
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll(".reveal").forEach((el) => {
+      revealObserver.observe(el);
+    });
+  }
+
+  /* ── 3. Animated counter for case metrics ──────── */
+  function initCounterAnimation() {
+    const caseMetrics = document.querySelectorAll(".case-metric");
+    if (!caseMetrics.length) return;
+
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    caseMetrics.forEach((metric) => {
+      // Store original text
+      metric.dataset.target = metric.textContent.trim();
+      counterObserver.observe(metric);
+    });
+  }
+
+  function animateCounter(el) {
+    const text = el.dataset.target;
+    const duration = 1500;
+    const start = performance.now();
+
+    // Extract number and prefix/suffix
+    const match = text.match(/^([^\d-]*)(-?\d+(?:\.\d+)?)(.*)/);
+    if (!match) return;
+
+    const prefix = match[1];
+    const targetNum = parseFloat(match[2]);
+    const suffix = match[3];
+    const isFloat = text.includes(".");
+
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = targetNum * eased;
+
+      if (isFloat) {
+        el.textContent = prefix + current.toFixed(1) + suffix;
+      } else {
+        el.textContent = prefix + Math.round(current) + suffix;
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = text;
+      }
+    }
+
+    el.textContent = prefix + "0" + suffix;
+    requestAnimationFrame(update);
+  }
+
+  /* ── 4. Logo strip marquee ─────────────────────── */
+  function initLogoMarquee() {
+    const logoStrip = document.querySelector(".logo-strip");
+    if (!logoStrip) return;
+
+    // Get all existing children
+    const items = Array.from(logoStrip.children);
+    if (!items.length) return;
+
+    // Create inner wrapper for marquee
+    const inner = document.createElement("div");
+    inner.className = "logo-strip-inner";
+
+    // Move original items into inner
+    items.forEach((item) => inner.appendChild(item));
+
+    // Duplicate items for seamless loop
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      inner.appendChild(clone);
+    });
+
+    logoStrip.appendChild(inner);
+  }
+
+  /* ── 5. Subtle tilt effect on cards ────────────── */
+  function initTiltEffect() {
+    const tiltCards = document.querySelectorAll(
+      ".service-card, .pillar-card, .pricing-card, .case-card"
+    );
+
+    tiltCards.forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -3;
+        const rotateY = ((x - centerX) / centerX) * 3;
+
+        card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+      });
+    });
+  }
+
+  /* ── 6. Parallax on hero glow ──────────────────── */
+  function initParallax() {
+    const heroGlow = document.querySelector(".hero-glow");
+    if (!heroGlow) return;
+
+    window.addEventListener("mousemove", (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      heroGlow.style.transform = `translate(${x}px, ${y}px)`;
+    }, { passive: true });
+  }
+
+  /* ── Initialize all animations ─────────────────── */
+  function initAnimations() {
+    setupRevealClasses();
+    initScrollReveal();
+    initCounterAnimation();
+    initLogoMarquee();
+    initTiltEffect();
+    initParallax();
+  }
+
+  // Run after DOM is ready and loader is done
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      // Slight delay to let the loader finish
+      setTimeout(initAnimations, 100);
+    });
+  } else {
+    setTimeout(initAnimations, 100);
+  }
 })();
+

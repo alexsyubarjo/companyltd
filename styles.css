@@ -1,4 +1,4 @@
-/* NexusForge Digital — B2B Landing Page */
+/* alexsyubarjoltd — B2B Landing Page */
 
 :root {
   --navy-900: #0a1628;
@@ -1060,6 +1060,28 @@ a:hover {
   line-height: 1.6;
 }
 
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-features li {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-features svg {
+  color: var(--cyan-dark);
+  flex-shrink: 0;
+}
+
 .service-link {
   font-size: 0.875rem;
   font-weight: 600;
@@ -1715,6 +1737,485 @@ a:hover {
 
 .hide-mobile {
   display: inline-flex;
+}
+
+/* ── Animations & Scroll Reveal ──────────────────────────── */
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(6, 182, 212, 0.15);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slideInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes barGrow {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes countPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes riskBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes typewriterCursor {
+  0%, 100% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: var(--cyan);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Scroll reveal base — hidden initially */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal.reveal-scale {
+  transform: scale(0.9);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger delays for grid children */
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0s; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.3s; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 0.4s; }
+.reveal-stagger > .reveal:nth-child(6) { transition-delay: 0.5s; }
+.reveal-stagger > .reveal:nth-child(7) { transition-delay: 0.6s; }
+.reveal-stagger > .reveal:nth-child(8) { transition-delay: 0.7s; }
+
+/* Hero animations */
+.hero-copy h1 {
+  background: linear-gradient(
+    90deg,
+    var(--navy-900) 0%,
+    var(--navy-700) 40%,
+    var(--cyan-dark) 60%,
+    var(--navy-900) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+.hero-visual .dashboard-mockup {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.hero-glow {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+/* Animated score bars in mockup */
+.score-bar span,
+.rating-bar span {
+  animation: barGrow 1.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 1.5s;
+}
+
+/* Risk dots pulsing */
+.risk-dot.critical {
+  animation: riskBlink 2s ease-in-out infinite;
+}
+
+/* Announcement bar shimmer */
+.announcement-bar {
+  background: linear-gradient(
+    90deg,
+    var(--navy-900) 0%,
+    #152a4a 25%,
+    var(--navy-900) 50%,
+    #152a4a 75%,
+    var(--navy-900) 100%
+  );
+  background-size: 300% 100%;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+/* Logo strip marquee animation */
+.logo-strip {
+  overflow: hidden;
+  flex-wrap: nowrap;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.logo-strip {
+  animation: none;
+}
+
+.logo-strip-inner {
+  display: flex;
+  gap: 1rem;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+/* Enhanced card hover micro-animations */
+.service-card {
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card:hover .service-icon {
+  animation: countPulse 0.5s ease-out;
+}
+
+.pillar-card {
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pillar-card:hover .pillar-icon {
+  animation: countPulse 0.5s ease-out;
+}
+
+.problem-card {
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.problem-card:hover {
+  transform: translateY(-6px);
+}
+
+.problem-card:hover .problem-icon {
+  animation: countPulse 0.5s ease-out;
+}
+
+/* Case metric counter animation */
+.case-metric {
+  transition: transform 0.3s ease;
+}
+
+.case-card:hover .case-metric {
+  transform: scale(1.1);
+  color: var(--cyan);
+}
+
+/* Process step enhanced animation */
+.process-step {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Pricing card hover lift */
+.pricing-card {
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.popular:hover {
+  transform: scale(1.03) translateY(-6px);
+}
+
+/* CTA section pulsing glow border */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 30% 50%,
+    rgba(6, 182, 212, 0.08) 0%,
+    transparent 50%
+  );
+  animation: breathe 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Button hover ripple effect */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.3) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.btn:hover::after {
+  opacity: 1;
+  transform: scale(2.5);
+}
+
+/* FAQ smooth open animation */
+.faq-item p {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Report card in audit section - float */
+.report-card {
+  animation: floatSlow 5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.report-card:hover {
+  animation-play-state: paused;
+}
+
+/* Footer links subtle animation */
+.footer-col a {
+  transition: color 0.3s ease, transform 0.3s ease, padding-left 0.3s ease;
+  display: inline-block;
+}
+
+.footer-col a:hover {
+  padding-left: 4px;
+}
+
+/* Badge pulse on hover */
+.badge {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  background: var(--navy-50);
+}
+
+/* Sparkline animation */
+.sparkline polyline {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: sparklineDraw 2s ease-out 1.5s forwards;
+}
+
+@keyframes sparklineDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Popular badge pulse */
+.popular-badge {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Smooth section divider animations */
+.section {
+  position: relative;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-copy h1 {
+    -webkit-text-fill-color: var(--navy-900);
+    background: none;
+  }
 }
 
 /* Responsive */

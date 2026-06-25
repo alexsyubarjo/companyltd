@@ -100,69 +100,83 @@ pages = [
         "title": "Website Company Profile",
         "description": "Bangun kredibilitas bisnis Anda dengan website company profile yang profesional, responsif, dan mencerminkan identitas brand yang kuat.",
         "benefits": [
-            {"title": "Desain Profesional", "desc": "Tampilan modern yang meningkatkan kepercayaan klien."},
-            {"title": "Responsif & Cepat", "desc": "Website optimal diakses dari smartphone maupun desktop."},
-            {"title": "SEO Dasar", "desc": "Struktur website yang ramah terhadap mesin pencari Google."}
+            {"title": "Desain Profesional Custom", "desc": "Tampilan modern yang unik dan disesuaikan dengan identitas brand Anda."},
+            {"title": "Responsif & Cepat", "desc": "Website yang dioptimalkan sepenuhnya agar lancar diakses dari smartphone, tablet, maupun desktop."},
+            {"title": "Struktur Ramah SEO", "desc": "Optimasi dasar struktur HTML agar halaman Anda lebih mudah dirayap dan mendapatkan ranking di Google."},
+            {"title": "Integrasi Kontak & WhatsApp", "desc": "Mempermudah calon pelanggan untuk langsung menghubungi sales team Anda lewat tombol interaktif."},
+            {"title": "Google Analytics & Tracking", "desc": "Lacak jumlah pengunjung, asal lalu lintas, dan perilaku pengunjung untuk strategi pemasaran Anda."}
         ]
     },
     {
         "filename": "ecommerce.html",
         "title": "Website E-Commerce",
-        "description": "Tingkatkan penjualan dengan platform toko online yang memiliki fitur keranjang belanja, payment gateway, dan manajemen produk yang mudah.",
+        "description": "Tingkatkan penjualan dengan platform toko online yang memiliki fitur katalog produk, keranjang belanja, dan checkout yang mulus.",
         "benefits": [
-            {"title": "Payment Gateway", "desc": "Terima pembayaran secara otomatis melalui transfer bank dan e-wallet."},
-            {"title": "Manajemen Produk", "desc": "Kelola stok, harga, dan katalog produk dengan mudah."},
-            {"title": "Pengalaman Belanja Mulus", "desc": "Proses checkout yang ringkas untuk mengurangi cart abandonment."}
+            {"title": "Integrasi Payment Gateway", "desc": "Terima pembayaran otomatis via Transfer Bank, Virtual Account, Kartu Kredit, dan E-Wallet (Gopay, OVO, dll)."},
+            {"title": "Manajemen Produk Intuitif", "desc": "Kelola kategori produk, varian warna/ukuran, harga promo, dan stok barang secara mandiri dengan mudah."},
+            {"title": "Pengalaman Belanja Mulus", "desc": "Desain alur checkout yang dipersingkat untuk meminimalkan pembatalan keranjang belanja (cart abandonment)."},
+            {"title": "Kalkulator Ongkir Otomatis", "desc": "Terintegrasi dengan API ekspedisi lokal (JNE, J&T, SiCepat) untuk menghitung ongkir real-time."},
+            {"title": "Laporan Penjualan Otomatis", "desc": "Dashboard statistik untuk memantau produk terlaris, pendapatan harian, dan tren transaksi."}
         ]
     },
     {
         "filename": "landing-page.html",
         "title": "Landing Page Campaign",
-        "description": "Halaman khusus yang dirancang dengan teknik copywriting dan desain yang fokus untuk memaksimalkan tingkat konversi dari iklan Anda.",
+        "description": "Halaman khusus yang dirancang dengan teknik copywriting dan tata letak fokus konversi untuk memaksimalkan ROI iklan Anda.",
         "benefits": [
-            {"title": "Fokus Konversi", "desc": "Tata letak dan Call-To-Action yang dioptimalkan untuk hasil maksimal."},
-            {"title": "A/B Testing Ready", "desc": "Struktur yang mudah diuji untuk menemukan formula pemenang."},
-            {"title": "Loading Kilat", "desc": "Memastikan pengunjung dari iklan tidak kabur karena loading lambat."}
+            {"title": "Copywriting Persuasif", "desc": "Teks penawaran yang dirancang khusus untuk memengaruhi psikologi pembeli dan meningkatkan penjualan."},
+            {"title": "Kecepatan Loading Ekstra", "desc": "Dioptimalkan agar terbuka kurang dari 2 detik demi menjaga calon pembeli dari iklan berbayar Anda tidak kabur."},
+            {"title": "Form Leads Teroptimasi", "desc": "Form input data yang ringkas untuk mengumpulkan kontak potensial (nama, email, nomor HP) dengan mudah."},
+            {"title": "Tracking Pixel & Tag Ready", "desc": "Siap dipasang Google Tag, Facebook Pixel, atau TikTok Pixel untuk melacak konversi iklan dengan akurat."},
+            {"title": "A/B Testing Friendly", "desc": "Struktur kode yang bersih dan teratur memudahkan pengujian berbagai variasi headline dan tombol CTA."}
         ]
     },
     {
         "filename": "web-app.html",
         "title": "Web App Development",
-        "description": "Sistem informasi, dashboard, atau portal custom yang dibangun sesuai dengan alur kerja bisnis Anda untuk meningkatkan efisiensi operasional.",
+        "description": "Sistem informasi, dashboard custom, atau portal klien yang dibangun khusus untuk meningkatkan efisiensi operasional bisnis Anda.",
         "benefits": [
-            {"title": "Custom Sesuai Kebutuhan", "desc": "Disesuaikan persis dengan proses bisnis perusahaan Anda."},
-            {"title": "Skalabilitas", "desc": "Dibangun menggunakan teknologi modern yang siap tumbuh bersama bisnis."},
-            {"title": "Keamanan Data", "desc": "Penerapan standar keamanan untuk melindungi data sensitif internal."}
+            {"title": "Solusi Kustom & Spesifik", "desc": "Dibangun persis mengikuti alur kerja (workflow) unik dan kebutuhan bisnis internal perusahaan Anda."},
+            {"title": "Arsitektur Scalable", "desc": "Menggunakan framework JavaScript modern untuk memastikan performa tetap prima seiring bertambahnya data."},
+            {"title": "Keamanan Data End-to-End", "desc": "Dilengkapi dengan autentikasi multi-level dan enkripsi database untuk melindungi data sensitif perusahaan."},
+            {"title": "Integrasi API Pihak Ketiga", "desc": "Hubungkan aplikasi Anda dengan layanan luar seperti CRM, sistem inventaris, atau API pihak ketiga lainnya."},
+            {"title": "Dashboard Visual Dinamis", "desc": "Sajikan data bisnis dalam bentuk grafik dan tabel interaktif untuk mempermudah pengambilan keputusan."}
         ]
     },
     {
         "filename": "pentesting.html",
         "title": "Security Pentesting",
-        "description": "Simulasi serangan siber yang komprehensif untuk menemukan dan menutup celah keamanan sebelum dieksploitasi oleh pihak yang tidak bertanggung jawab.",
+        "description": "Simulasi serangan siber nyata yang komprehensif untuk mendeteksi celah keamanan sistem sebelum disalahgunakan hacker.",
         "benefits": [
-            {"title": "Simulasi Dunia Nyata", "desc": "Menggunakan metode serangan yang biasa dilakukan oleh hacker."},
-            {"title": "Identifikasi Risiko", "desc": "Menemukan celah sebelum menjadi masalah besar yang merugikan."},
-            {"title": "Laporan Detil", "desc": "Laporan eksekutif dan teknis beserta rekomendasi perbaikan."}
+            {"title": "Metode Serangan Riil", "desc": "Menguji pertahanan sistem menggunakan teknik-teknik penetrasi terbaru yang biasa dipakai hacker black-hat."},
+            {"title": "Deteksi Celah Kritis", "desc": "Menemukan celah keamanan tersembunyi (seperti SQLi, XSS, SSRF) sebelum dieksploitasi pihak luar."},
+            {"title": "Laporan Teknis Mendalam", "desc": "Dokumentasi langkah demi langkah eksploitasi celah beserta instruksi remediasi untuk tim developer Anda."},
+            {"title": "Rekomendasi Remediasi", "desc": "Panduan konkret tentang cara menambal setiap kerentanan yang ditemukan agar sistem benar-benar aman."},
+            {"title": "Sertifikat Kepatuhan", "desc": "Memberikan bukti dokumentasi audit keamanan yang berguna untuk kepatuhan regulasi atau audit eksternal."}
         ]
     },
     {
         "filename": "vulnerability.html",
         "title": "Vulnerability Assessment",
-        "description": "Pemindaian menyeluruh terhadap infrastruktur digital Anda untuk mengidentifikasi kerentanan keamanan secara sistematis dan berkala.",
+        "description": "Pemindaian dan evaluasi sistematis terhadap seluruh sistem digital Anda untuk mendeteksi kerentanan keamanan secara berkala.",
         "benefits": [
-            {"title": "Deteksi Dini", "desc": "Pemindaian cepat untuk menemukan kelemahan umum."},
-            {"title": "Skoring Risiko", "desc": "Penilaian kerentanan berdasarkan standar CVSS."},
-            {"title": "Cost Effective", "desc": "Cara efisien untuk memantau keamanan sistem secara rutin."}
+            {"title": "Scan Kerentanan Otomatis", "desc": "Pemindaian menyeluruh ke seluruh port, server, dan web app untuk mendeteksi celah keamanan umum."},
+            {"title": "Skoring Risiko Terstandar", "desc": "Mengklasifikasikan tingkat keparahan risiko berdasarkan skor standar industri global (CVSS)."},
+            {"title": "Laporan Inventaris Aset", "desc": "Memetakan seluruh aset digital yang Anda miliki beserta status keamanannya saat ini."},
+            {"title": "Efisiensi Biaya (Cost-Effective)", "desc": "Cara yang sangat efisien dan terjangkau untuk melakukan pengecekan kesehatan keamanan sistem secara rutin."},
+            {"title": "Rencana Aksi Mitigasi", "desc": "Daftar prioritas kerentanan yang harus segera diperbaiki berdasarkan tingkat bahayanya."}
         ]
     },
     {
         "filename": "audit-infrastruktur.html",
         "title": "Audit Infrastruktur Digital",
-        "description": "Evaluasi dan peninjauan mendalam terhadap konfigurasi server, jaringan, dan arsitektur cloud untuk memastikan keamanan standar industri.",
+        "description": "Evaluasi mendalam terhadap arsitektur server, konfigurasi jaringan, dan setup cloud untuk memastikan efisiensi dan kepatuhan standar industri.",
         "benefits": [
-            {"title": "Tinjauan Arsitektur", "desc": "Memastikan desain sistem tahan terhadap gangguan dan serangan."},
-            {"title": "Hardening Server", "desc": "Rekomendasi konfigurasi untuk memperkuat pertahanan server."},
-            {"title": "Compliance Check", "desc": "Membantu memastikan sistem mematuhi standar keamanan terkait."}
+            {"title": "Analisis Arsitektur Cloud/Server", "desc": "Evaluasi ketahanan, keamanan, dan skalabilitas setup cloud (AWS, GCP, Azure) atau VPS Anda."},
+            {"title": "Review Kebijakan Akses (IAM)", "desc": "Memastikan prinsip hak akses minimum (least privilege) diterapkan secara ketat di infrastruktur Anda."},
+            {"title": "Optimasi Biaya Server", "desc": "Mengidentifikasi pemborosan sumber daya server untuk membantu menghemat pengeluaran bulanan cloud Anda."},
+            {"title": "Penyelarasan Kepatuhan (Compliance)", "desc": "Membantu sistem Anda memenuhi standar keamanan industri (seperti ISO 27001 atau PCI-DSS)."},
+            {"title": "Rekomendasi Disaster Recovery", "desc": "Menyusun rencana backup dan pemulihan darurat agar bisnis tetap berjalan saat terjadi insiden server down."}
         ]
     },
     {
@@ -170,9 +184,11 @@ pages = [
         "title": "Maintenance & Hardening",
         "description": "Layanan pemeliharaan berkelanjutan, pembaruan keamanan, dan optimasi performa agar website Anda selalu dalam kondisi terbaik.",
         "benefits": [
-            {"title": "Pembaruan Berkala", "desc": "Selalu mendapatkan versi software dan patch keamanan terbaru."},
-            {"title": "Backup Rutin", "desc": "Cadangan data berkala agar bisnis bisa segera pulih jika terjadi insiden."},
-            {"title": "Monitoring 24/7", "desc": "Pemantauan uptime dan deteksi anomali pada sistem Anda."}
+            {"title": "Pembaruan & Patching Rutin", "desc": "Update rutin engine CMS, framework, plugin, dan library untuk menutup celah keamanan baru yang rilis."},
+            {"title": "Backup Otomatis & Terenkripsi", "desc": "Cadangkan seluruh database dan file website secara rutin ke server penyimpanan terpisah yang aman."},
+            {"title": "Monitoring Uptime 24/7", "desc": "Pemantauan status website Anda tanpa henti dengan notifikasi instan jika terjadi gangguan akses."},
+            {"title": "Pengerasan Keamanan (Hardening)", "desc": "Memperkuat server dengan firewall khusus, penutupan port yang tidak terpakai, dan pemblokiran brute-force."},
+            {"title": "Pembersihan & Deteksi Malware", "desc": "Pemindaian rutin terhadap file server untuk mendeteksi dan membersihkan file berbahaya (backdoor/malware)."}
         ]
     }
 ]

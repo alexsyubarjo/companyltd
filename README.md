@@ -1,4 +1,4 @@
-# NexusForge Digital — Landing Page
+# alexsyubarjoltd — Landing Page
 
 Landing page B2B untuk jasa pembuatan website profesional dan security pentesting/audit keamanan bisnis.
 
@@ -25,10 +25,10 @@ cd website && python3 -m http.server 8080
 
 ## Kustomisasi Brand
 
-Ganti **NexusForge Digital** di `index.html` dengan nama brand Anda. Update juga:
+Ganti **alexsyubarjoltd** di `index.html` dengan nama brand Anda. Update juga:
 
 - Email: `hello@nexusforge.id`
-- WhatsApp: `6281234567890`
+- WhatsApp: `6287805718296`
 - Alamat di footer
 
 ## Catatan
