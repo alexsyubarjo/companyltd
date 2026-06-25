@@ -97,8 +97,8 @@ def generate_page(filename, title, description, benefits):
 pages = [
     {
         "filename": "company-profile.html",
-        "title": "Website Company Profile",
-        "description": "Bangun kredibilitas bisnis Anda dengan website company profile yang profesional, responsif, dan mencerminkan identitas brand yang kuat.",
+        "title": "Company Profile Website",
+        "description": "Website profesional untuk menampilkan identitas bisnis, memperkuat reputasi, dan menarik calon klien baru secara efektif.",
         "benefits": [
             {"title": "Desain Profesional Custom", "desc": "Tampilan modern yang unik dan disesuaikan dengan identitas brand Anda."},
             {"title": "Responsif & Cepat", "desc": "Website yang dioptimalkan sepenuhnya agar lancar diakses dari smartphone, tablet, maupun desktop."},
@@ -109,8 +109,8 @@ pages = [
     },
     {
         "filename": "ecommerce.html",
-        "title": "Website E-Commerce",
-        "description": "Tingkatkan penjualan dengan platform toko online yang memiliki fitur katalog produk, keranjang belanja, dan checkout yang mulus.",
+        "title": "E-Commerce Website",
+        "description": "Toko online modern yang dilengkapi sistem pembayaran otomatis, manajemen katalog, dan keranjang belanja user-friendly.",
         "benefits": [
             {"title": "Integrasi Payment Gateway", "desc": "Terima pembayaran otomatis via Transfer Bank, Virtual Account, Kartu Kredit, dan E-Wallet (Gopay, OVO, dll)."},
             {"title": "Manajemen Produk Intuitif", "desc": "Kelola kategori produk, varian warna/ukuran, harga promo, dan stok barang secara mandiri dengan mudah."},
@@ -122,7 +122,7 @@ pages = [
     {
         "filename": "landing-page.html",
         "title": "Landing Page Campaign",
-        "description": "Halaman khusus yang dirancang dengan teknik copywriting dan tata letak fokus konversi untuk memaksimalkan ROI iklan Anda.",
+        "description": "Halaman penawaran khusus yang didesain dengan teknik copywriting tajam untuk memaksimalkan angka konversi kampanye iklan.",
         "benefits": [
             {"title": "Copywriting Persuasif", "desc": "Teks penawaran yang dirancang khusus untuk memengaruhi psikologi pembeli dan meningkatkan penjualan."},
             {"title": "Kecepatan Loading Ekstra", "desc": "Dioptimalkan agar terbuka kurang dari 2 detik demi menjaga calon pembeli dari iklan berbayar Anda tidak kabur."},
@@ -134,7 +134,7 @@ pages = [
     {
         "filename": "web-app.html",
         "title": "Web App Development",
-        "description": "Sistem informasi, dashboard custom, atau portal klien yang dibangun khusus untuk meningkatkan efisiensi operasional bisnis Anda.",
+        "description": "Aplikasi web kustom yang dirancang untuk mendukung operasional internal, dashboard interaktif, dan manajemen database.",
         "benefits": [
             {"title": "Solusi Kustom & Spesifik", "desc": "Dibangun persis mengikuti alur kerja (workflow) unik dan kebutuhan bisnis internal perusahaan Anda."},
             {"title": "Arsitektur Scalable", "desc": "Menggunakan framework JavaScript modern untuk memastikan performa tetap prima seiring bertambahnya data."},
@@ -146,7 +146,7 @@ pages = [
     {
         "filename": "pentesting.html",
         "title": "Security Pentesting",
-        "description": "Simulasi serangan siber nyata yang komprehensif untuk mendeteksi celah keamanan sistem sebelum disalahgunakan hacker.",
+        "description": "Simulasi peretasan sistem secara berkala untuk menguji kekuatan pertahanan dari serangan hacker nyata secara langsung.",
         "benefits": [
             {"title": "Metode Serangan Riil", "desc": "Menguji pertahanan sistem menggunakan teknik-teknik penetrasi terbaru yang biasa dipakai hacker black-hat."},
             {"title": "Deteksi Celah Kritis", "desc": "Menemukan celah keamanan tersembunyi (seperti SQLi, XSS, SSRF) sebelum dieksploitasi pihak luar."},
@@ -158,7 +158,7 @@ pages = [
     {
         "filename": "vulnerability.html",
         "title": "Vulnerability Assessment",
-        "description": "Pemindaian dan evaluasi sistematis terhadap seluruh sistem digital Anda untuk mendeteksi kerentanan keamanan secara berkala.",
+        "description": "Pemindaian berkala untuk mendeteksi kerentanan teknis pada server, aplikasi, dan sistem jaringan komputer bisnis Anda.",
         "benefits": [
             {"title": "Scan Kerentanan Otomatis", "desc": "Pemindaian menyeluruh ke seluruh port, server, dan web app untuk mendeteksi celah keamanan umum."},
             {"title": "Skoring Risiko Terstandar", "desc": "Mengklasifikasikan tingkat keparahan risiko berdasarkan skor standar industri global (CVSS)."},
@@ -169,8 +169,8 @@ pages = [
     },
     {
         "filename": "audit-infrastruktur.html",
-        "title": "Audit Infrastruktur Digital",
-        "description": "Evaluasi mendalam terhadap arsitektur server, konfigurasi jaringan, dan setup cloud untuk memastikan efisiensi dan kepatuhan standar industri.",
+        "title": "Digital Infrastructure Audit",
+        "description": "Audit arsitektur server, cloud, dan jaringan untuk memastikan efisiensi biaya, skalabilitas, dan kepatuhan standar.",
         "benefits": [
             {"title": "Analisis Arsitektur Cloud/Server", "desc": "Evaluasi ketahanan, keamanan, dan skalabilitas setup cloud (AWS, GCP, Azure) atau VPS Anda."},
             {"title": "Review Kebijakan Akses (IAM)", "desc": "Memastikan prinsip hak akses minimum (least privilege) diterapkan secara ketat di infrastruktur Anda."},
@@ -182,7 +182,7 @@ pages = [
     {
         "filename": "maintenance.html",
         "title": "Maintenance & Hardening",
-        "description": "Layanan pemeliharaan berkelanjutan, pembaruan keamanan, dan optimasi performa agar website Anda selalu dalam kondisi terbaik.",
+        "description": "Pemeliharaan rutin, backup terenkripsi, dan optimasi performa berkelanjutan agar sistem Anda selalu aman dan stabil.",
         "benefits": [
             {"title": "Pembaruan & Patching Rutin", "desc": "Update rutin engine CMS, framework, plugin, dan library untuk menutup celah keamanan baru yang rilis."},
             {"title": "Backup Otomatis & Terenkripsi", "desc": "Cadangkan seluruh database dan file website secara rutin ke server penyimpanan terpisah yang aman."},
